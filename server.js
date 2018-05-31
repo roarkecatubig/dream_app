@@ -21,7 +21,7 @@ var PORT = process.env.PORT || 8000;
 
 // Passport set up
 app.use(cookieSession({
-  maxAge: 1800000,
+  maxAge: 86400000,
   keys: [keys.session.cookieKey]
 }));
 
