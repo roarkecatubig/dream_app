@@ -143,11 +143,11 @@ $(document).ready(function () {
     newDreamDate.addClass("dream-date")
 
     var newDreamPolarity = $("<td>");
-    newDreamPolarity.text("Polarity: " + dream.polarity);
+    newDreamPolarity.text("Sentiment: " + dream.polarity);
     newDreamPolarity.addClass("polarity")
 
     var newDreamPolarityConfidence = $("<td>");
-    newDreamPolarityConfidence.text("Polarity Confidence: " + formattedPolCon + "%");
+    newDreamPolarityConfidence.text("Sentiment Confidence: " + formattedPolCon + "%");
     newDreamPolarityConfidence.addClass("polarity_confidence")
 
     var dreamMood = $("<td>");
@@ -171,12 +171,8 @@ $(document).ready(function () {
     var formattedDate = new Date(dream.createdAt);
     formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
     newDreamDate.text(formattedDate);
-
-    // newPostTitle.append(newPostDate);
-
     newDreamCardHeading.append(deleteBtn);
     newDreamCardHeading.append(editBtn);
-    // newPostCardHeading.append(newPostTitle);
     newDreamCardHeading.append(newDreamCategory);
     newDreamCardHeading.append(newDreamDate);
     newDreamCardHeading.append(newDreamPolarity);
