@@ -202,6 +202,7 @@ $(document).ready(function () {
     .parent()
     .data("dream");
     deleteDream(currentDream.id);
+    window.location.href = "/my-dreams";
   }
   // This function figures out which dream we want to edit and takes it to the
   // Appropriate url
